@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="container-inputs">
+    <div>
+      <input placeholder="My Name" type="text">
+      <input placeholder="User Name" type="text">
+
+    </div>
+    <div>
+      <button (click)="camTunrOn()">Turn on cam</button>
+    </div>
+  </div>
+  <div class="container-video">
+    <div class="container-video-item">
+      <video autoplay #localVideo></video>
+    </div>
+    <div class="container-video-item">
+      <video #remoteVideo></video>
+    </div>
+
+  </div>
+</div>
+
+<router-outlet></router-outlet>
