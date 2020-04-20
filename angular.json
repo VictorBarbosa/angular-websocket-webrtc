@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "angular-websocket-webrtc": {
@@ -143,8 +143,17 @@
               "devServerTarget": "angular-websocket-webrtc:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/angular-websocket-webrtc",
+            "netlifyToken": "99a08d239bdf2ef84e5b62fc60ebfcac74eb6720b178b45fe331101c7859741b",
+            "siteId": "2c1bcf93-21a3-40ad-8fc9-875ef3f95abc"
+          }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "angular-websocket-webrtc"
 }
